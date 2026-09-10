@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package Tugas_5;
 
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
+import javax.swing.JOptionPane;
+
 public class Tugas_5_2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        String word1 = JOptionPane.showInputDialog("Enter word 1");
+
+        String word2 = JOptionPane.showInputDialog("Enter word 2");
+
+        String word3 = JOptionPane.showInputDialog("Enter word 3");
+
+        String hasil = word1 + " " + word2 + " " + word3;
+
+        JOptionPane.showMessageDialog(null, hasil);
     }
-    
 }
