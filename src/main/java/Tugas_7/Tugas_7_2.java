@@ -1,20 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package Tugas_7;
 
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
-public class Tugas_7_2 {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Tugas_7_2 {
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(
+                new InputStreamReader(System.in)
+        );
+
+        int[] angka = new int[10];
+
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Masukkan angka ke-" + (i + 1) + ": ");
+            angka[i] = Integer.parseInt(br.readLine());
+        }
+
+        int terbesar = angka[0];
+
+        for (int i = 1; i < 10; i++) {
+            if (angka[i] > terbesar) {
+                terbesar = angka[i];
+            }
+        }
+
+        System.out.println("Angka terbesar adalah = " + terbesar);
     }
-    
 }

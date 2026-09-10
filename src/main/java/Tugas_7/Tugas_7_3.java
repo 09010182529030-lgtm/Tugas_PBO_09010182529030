@@ -1,20 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package Tugas_7;
 
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
 public class Tugas_7_3 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        String entry[][] = {
+            {"Florence", "735-1234", "Manila"},
+            {"Joyce", "983-3333", "Quezon City"},
+            {"Becca", "456-3322", "Manila"}
+        };
+
+        for (int i = 0; i < entry.length; i++) {
+
+            System.out.println("Name    : " + entry[i][0]);
+            System.out.println("Tel. #  : " + entry[i][1]);
+            System.out.println("Address : " + entry[i][2]);
+            System.out.println();
+        }
     }
-    
 }
