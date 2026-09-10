@@ -1,20 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package Tugas_6;
 
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
-public class Tugas_6_2 {
+import javax.swing.JOptionPane;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Tugas_6_2 {
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        double nilai1 = Double.parseDouble(
+                JOptionPane.showInputDialog("Masukkan nilai ujian 1:")
+        );
+
+        double nilai2 = Double.parseDouble(
+                JOptionPane.showInputDialog("Masukkan nilai ujian 2:")
+        );
+
+        double nilai3 = Double.parseDouble(
+                JOptionPane.showInputDialog("Masukkan nilai ujian 3:")
+        );
+
+        double rataRata = (nilai1 + nilai2 + nilai3) / 3;
+
+        if (rataRata >= 60) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Nilai rata-rata = " + rataRata + "\n:)"
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Nilai rata-rata = " + rataRata + "\n:-("
+            );
+        }
     }
-    
 }
